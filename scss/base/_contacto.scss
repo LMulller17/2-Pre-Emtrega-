@@ -1,0 +1,101 @@
+//Import de Variables
+@import "../utilidades/variables";
+//Import de Mixin
+@import "../utilidades/mixin";
+
+
+
+//Estilos de Contacto
+.contenedor-contacto{
+    margin-left: auto;
+    margin-right: auto;
+    h1{
+        color: $texto-color;
+        margin: 100px 0 0 0;
+        text-align: center;
+    }
+    .contacto-wrapper{
+        background-color: $main-color;
+        margin: 50px 40px;
+        box-shadow: 0 0 20px 0 rgba(238, 232, 232, 0.3);
+        display: flex;
+        flex-direction: column;
+        > *{
+            padding: 1em;
+        }
+        .contacto-form{
+            h3{
+                color: $texto-color;
+                margin: 30px;
+                gap: 20px;
+            }
+            form{
+                @include flexContacto;
+                label{
+                    display: block;
+                }
+                p{
+                    margin: 0;
+                    padding: 1em;
+                }
+                .block{
+                    grid-column: 1 / 3;
+                }
+                button{
+                    @include formContacto;
+                    background: $color-secundario;
+                    color: $texto-color;
+                    border: 0;
+                    text-transform: uppercase;
+                    padding: 1em;
+                    &:hover{
+                        background: $texto-color;
+                        color: $color-principal;
+                        transition: background-color 1s ease-out;
+                        outline: 0;
+                    }
+                    &:focus{
+                        background: $texto-color;
+                        color: $color-principal;
+                        transition: background-color 1s ease-out;
+                        outline: 0;
+                    }
+                }
+                input{
+                    @include formContacto;
+                }
+                textarea{
+                    @include formContacto;
+                }
+            }
+        }
+        //Contacto Info
+        .contacto-info{
+            background: $texto-color-secundario;
+            color: $main-color;
+            font-size: 25px;
+            h4{
+                color: $color-secundario;
+                text-align: center;
+                margin: 1rem 0 1rem 0;
+            }
+            ul{
+                color: $color-principal;
+                list-style: none;
+                font-size: 22px;
+                padding: 0;
+                margin: 0 0 280px 0px;
+                text-shadow: 2px 2px 4px #000;
+            }
+            ion-icon{
+                margin: 0 20px 0 0;
+            }
+            p {
+                margin: 20px;
+                font-size: 20px;
+                color: $color-principal;
+                text-shadow: 2px 2px 4px #000;
+            }
+        }
+    }
+}

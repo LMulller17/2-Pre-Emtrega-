@@ -1,0 +1,14 @@
+//Import de Variables
+@import "../utilidades/variables";
+
+//Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//body
+body{
+    background-color: $color-secundario;
+}

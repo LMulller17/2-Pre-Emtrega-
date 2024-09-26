@@ -1,0 +1,58 @@
+//Import de Variables
+@import "../utilidades/variables";
+//Import de Mixin
+@import "../utilidades/mixin";
+
+//Estilos de Educacion
+
+.educacion-contenedor{
+    @include flexEducacion;
+    h2{
+        color: $texto-color;
+        font-size: 40px;
+        margin: 30px 0 0 0;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .educacion-card-contenedor{
+        .row{
+            .educacion-card{
+                .educacion-card2{
+                    background-color: $main-color;
+                    border-radius: 24px;
+                    min-height: 15rem;
+                    margin: 20px;
+                    padding: 20px 35px ;
+                    align-content: center;
+                    transition: transform 0.3s;
+                    img{
+                        display: flex;
+                        justify-items: center;
+                        height: 250px;
+                        width: 265px;
+                        border-radius: 5px;
+                    }
+                    h3{
+                        color: $texto-color;
+                        text-shadow: 2px 2px 4px #000;
+                        font-size: 30px;
+                        text-align: center;
+                        margin: 10px;
+                    }
+                    h4{
+                        color: $texto-color-secundario;
+                        text-shadow: 2px 2px 4px #000;
+                        font-size: 25px;
+                    }
+                    p{
+                        color: $texto-color-secundario;
+                        margin-top: 0.5rem;
+                        font-size: 30px;
+                        text-align: end;
+                        text-shadow: 2px 2px 4px #000;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,166 @@
+//Import de Variables
+@import "../utilidades/variables";
+//Import de Mixin
+@import "../utilidades/mixin";
+
+//Estilos de Tablet
+
+@media screen and (min-width:600px){
+    //estilos de Nav
+    header{
+        nav{
+            div{
+                button{
+                    font-size: xx-large;
+                    background-color: $main-color;
+                    color: $texto-color;
+                }
+            }
+        }
+    }
+
+    // Estilos de main - index
+    .index-main{
+        .contenedor-banner{
+            margin: 150px 200px 20px;
+            padding: 30px;
+            width: 50%;
+            height: 700px;
+            div{
+                img{
+                    margin-top: 40px;
+                    border: 10px solid $color-principal;
+                    display: block;
+                    width: 70%;
+                    height: 90%;
+                    margin: auto;
+                    border-radius: 100%;
+                }
+            }
+            h1{
+                color: $texto-color;
+                margin-top: 15px;
+                font-size: 45px;
+                text-shadow: 2px 2px 4px #000;
+            }
+            h2{
+                font-size: 30px;
+                margin: 25px;
+                color: $texto-color;
+                text-shadow: 2px 2px 4px #000; 
+            }
+            .redes{
+                a{
+                    color: whitesmoke;
+                    text-decoration: none;
+                    width: 50px;
+                    height: 50px; 
+                }
+            }
+        }
+    }
+    .sobremi{
+        .contenedor-section{
+            div{
+                p{
+                    font-size: 25px;
+                    text-align: center;     
+                }
+            }
+            .fila{
+                .col{
+                    margin: 40px;
+                    font-size: 25px;
+                }
+            }
+            .col{
+                .contenedor-intereses{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(3, auto);
+                }
+            }
+        }
+    }
+    //Estilo de main- proyectos personales (revisar)
+    .proyecto-contenedor{
+        .proyecto-card{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            .card-proyecto2{
+                text-align: center;   
+                img{
+                    height: 290px;
+                    width: 280px;
+                    margin: 10px 3px;
+                    border-radius: 10px;
+                }
+                .card-body{
+                    .card-title{
+                        font-size: 35px;
+                    }
+                    .card-text{
+                        font-size: 25px;
+                    }
+                    a{
+                        ion-icon{
+                            width: 90px;
+                            height: 90px;
+                        }
+                    }
+                    }
+            }
+        }
+    }
+    //Estilos de main - tecnologia
+    .skill-contenedor{
+        width: auto;
+        height: auto;
+        h2{
+            margin: 160px 50px 0 0;
+            font-size: 45px;
+        }
+        .skill-secundaria{
+            margin: 50px 150px;
+            .skill-card{
+                article{
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+    //Estilos de main - educacion
+    .educacion-card{
+        width: 500px;
+        height: 550px;
+        justify-items: center;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        cursor: pointer;
+        transition: all 0.3s;
+        .educacion-card2{
+            width: 350px;
+            height: 500px;
+            img{
+                width: 250px;
+                height: 270px;
+            }
+        }                   
+    }
+    //Estilos de main -contacto
+    .contenedeor-contacto{
+        h1{
+            margin: 40px 0 25px 0;
+        }
+    }
+    // estilos de footer
+    footer{
+        margin: 540px 0 0 0;
+        .pieDePagina{
+            font-size: 25px;
+        }
+    }
+}

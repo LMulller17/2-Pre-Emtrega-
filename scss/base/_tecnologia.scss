@@ -1,0 +1,39 @@
+//Import de Variables
+@import "../utilidades/variables";
+//Import de Mixin
+@import "../utilidades/mixin";
+
+//Estilos de TEcnologia
+
+.skill-contenedor{
+    width: auto;
+    height: auto;
+    h2{
+        color: $texto-color;
+        text-align: center;
+        margin: 50px 0 20px 0;
+    }
+    .skill-secundaria{
+        @include flexTecnologia;
+        .skill-card{
+            background-color: $main-color;
+            color: $texto-color;
+            margin:  20px;
+            padding: 10px;
+            border-radius: 20px ;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: $texto-color;
+                color: $color-secundario;
+                translate: scale(1.1);
+            }
+            article{
+                text-align: center;
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,138 @@
+//Import de Variables
+@import "../utilidades/variables";
+//Import de Mixin
+@import "../utilidades/mixin";
+
+//Estilos de Desktop
+@media screen and (min-width:1024px){
+    //Estilos de Nav
+
+
+    //Estilos de main - index
+    .index-main{
+        width: 80%;
+        height: auto;
+        .contenedor-banner{
+            margin: 150px 420px 0 420px ;
+            padding: 30px;
+            width: 50%;
+            height: 700px;
+            text-align: center;
+            .contenedor-img{
+                img{
+                    margin-top: 40px;
+                    border: 10px solid $color-principal;
+                    display: block;
+                    width: 65%;
+                    height: 350px;
+                    margin: auto;
+                    border-radius: 100%;
+                }
+            }
+            h1{
+                color: $texto-color;
+                font-size: 45px;
+                text-shadow: 2px 2px 4px #000;
+            }
+            h2{
+                font-size: 30px;
+                margin: 25px;
+                color: $texto-color;
+                text-shadow: 2px 2px 4px #000;
+            }
+            .redes{
+                a{
+                    color: whitesmoke;
+                    text-decoration: none;
+                    width: 50px;
+                    height: 50px;  
+                }
+            }
+        }
+    }
+}
+.sobremi{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    .contenedor-section{
+        div{
+            margin: 0 0 150px 0;
+            p{
+                margin: 40px;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+        }
+        .fila{
+            .col{
+                h3{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+//Estilos de main - proyectos personales
+.proyecto-card{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    .card-proyecto2{
+        text-align: center;
+
+        img{
+            height: 400px;
+            width: 440px;
+            margin: 10px 3px;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .card-body{
+            .card-title{
+                font-size: 35px;
+            }
+            .card-text{
+                font-size: 30px;
+            }
+            ion-icon{
+                width: 90px;
+                height: 90px;
+            }
+        }
+    }
+}
+//Estilos de main - tecnologia
+.skill-secundaria{
+    margin: 50px 450px 0 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+//Estilos de main - educacion
+.educacion-card{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+//Estilos de main - contacto
+.contenedor-contacto{
+    .contacto-titulo{
+        margin: 150px 0 0 0;
+    }
+    div{
+        .contacto-wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+//Estilos de footer
+footer{
+    margin:50px 0 0 0 ;
+    .pieDePagina{
+        font-size: 16px;
+    }
+}
