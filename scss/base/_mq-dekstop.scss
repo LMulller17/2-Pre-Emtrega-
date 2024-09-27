@@ -4,26 +4,30 @@
 @import "../utilidades/mixin";
 
 //Estilos de Desktop
-@media screen and (min-width:1024px){
+@media screen and (min-width:1280px){
     //Estilos de Nav
 
 
     //Estilos de main - index
+main{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     .index-main{
         width: 80%;
-        height: auto;
+        height: 80%;
+        margin: 20px;
         .contenedor-banner{
-            margin: 150px 420px 0 420px ;
-            padding: 30px;
-            width: 50%;
-            height: 700px;
+            margin: 50px 260px 30px 60px ;
+            width: 80%;
+            height: 730px;
             text-align: center;
             .contenedor-img{
                 img{
                     margin-top: 40px;
                     border: 10px solid $color-principal;
                     display: block;
-                    width: 65%;
+                    width: 75%;
                     height: 350px;
                     margin: auto;
                     border-radius: 100%;
@@ -52,7 +56,7 @@
     }
 }
 .sobremi{
-    margin: 50px;
+    margin: 15px;
     display: flex;
     flex-direction: row;
     .contenedor-section{
@@ -65,68 +69,114 @@
             }
         }
         .fila{
+            margin: 30px;
             .col{
                 h3{
+                    margin: 20px;
                     font-size: 25px;
+                }
+                .contenedor-intereses{
+                    .interes{
+                        margin: 30px;
+                    }
                 }
             }
         }
     }
 }
+}
 
 //Estilos de main - proyectos personales
-.proyecto-card{
-    margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, auto);
-    .card-proyecto2{
-        text-align: center;
-
-        img{
-            height: 400px;
-            width: 440px;
-            margin: 10px 3px;
-            align-items: center;
-            border-radius: 10px;
+.proyecto-contenedor{
+    div{
+        div{
+            h2{
+                text-align: center;
+            }
         }
-        .card-body{
-            .card-title{
-                font-size: 35px;
-            }
-            .card-text{
-                font-size: 30px;
-            }
-            ion-icon{
-                width: 90px;
-                height: 90px;
+        .proyecto-card{
+            margin: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto);
+            .card-proyecto2{
+                width: 300px; /* Ancho deseado */
+                height: 800px; /* Alto deseado */
+                padding: 20px; /* Espacio interior */
+                text-align: center;
+                img{
+                    height: 200px;
+                    width: 240px;
+                    margin: 10px 3px;
+                    align-items: center;
+                    border-radius: 10px;
+                }
+                .card-body{
+                    .card-title{
+                        font-size: 30px;
+                    }
+                    .card-text{
+                        font-size: 20px;
+                    }
+                    ion-icon{
+                        width: 60px;
+                        height: 60px;
+                        margin: 25px 25px 0 15px;
+                    }
+                }
             }
         }
     }
 }
 //Estilos de main - tecnologia
-.skill-secundaria{
-    margin: 50px 450px 0 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+.skill-contenedor{
+    margin: auto;
+    div{
+        .skill-secundaria{
+            margin: 50px 350px 0 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            .skill-card{
+                article{
+                    p{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
 }
 //Estilos de main - educacion
-.educacion-card{
-    align-content: center;
-    display: flex;
-    flex-direction: row;
+main{
+    .educacion-contenedor{
+        h2{
+            margin: 0 0 0 550px;
+        }
+        .educacion-card-contenedor{
+            .row{
+                margin: 30px;
+                .educacion-card{
+                    margin: auto;
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
 }
 //Estilos de main - contacto
 .contenedor-contacto{
-    .contacto-titulo{
-        margin: 150px 0 0 0;
-    }
     div{
-        .contacto-wrapper{
-            display: flex;
-            flex-direction: row;
+        .contacto-titulo{
+            h1{
+                margin: 100px 0 0 0;
+            }
         }
+    }
+    .contacto-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 //Estilos de footer

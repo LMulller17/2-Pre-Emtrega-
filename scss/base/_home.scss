@@ -6,7 +6,7 @@
 //Estilos de Inicio
 main{
     .index-main{
-        margin: 200px 0 0;
+        justify-content: center;
         .contenedor-banner{
             margin: 10px;
             padding: 10px;
@@ -43,7 +43,7 @@ main{
                     text-decoration: none;
                     width: 40px;
                     height: 40px;
-                    margin: 40px 15px;
+                    margin: 30px 15px;
                     font-size: 60px;
                     transition: .3s; 
                     &:hover{
@@ -80,65 +80,6 @@ main{
                     margin: 0 5px;
                     color: $texto-color-secundario;
                     font-weight: bold;
-                }
-            }
-            .fila{
-                display: flex;
-                flex-direction:column;
-                gap: 1rem;
-                padding: 1rem;
-                .col{
-                    h3{
-                        font-size: 25px;
-                        padding: 10px 30px;
-                        text-align: center;
-                    }
-                    ul{
-                        list-style: none;
-                        li{
-                            margin: 12px 0;
-                            strong{
-                                display: inline-block;
-                                color: $texto-color;
-                                text-shadow: 2px 2px 4px #000;
-                                width: 95px;
-                                font-size: 17px;
-                            }
-                            span{
-                                color: $texto-color-secundario;
-                                text-shadow: 4px 4px 4px #000;
-                            }
-                        }
-                    }
-                    .contenedor-intereses{
-                        padding: 10px 30px;
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-template-rows: repeat(2, auto);
-                        .interes{
-                            width: 100px;
-                            height: 100px;
-                            background-color: $color-secundario;
-                            border-radius: 10px;
-                            margin: 0 15px 15px 0;
-                            font-size: 17px;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            transition: .3s;
-                            &:hover{
-                                background-color: $texto-color;
-                                color: whitesmoke;
-                                box-shadow: 0px 0px 0px 0px;
-                                cursor: pointer;
-                                transition: all 0.3s;
-                            }
-                            ion-icon{
-                                width: 90px;
-                                height: 90px;
-                            }
-                        }
-                    }
                 }
             }
         }

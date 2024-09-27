@@ -9,10 +9,14 @@
 .contenedor-contacto{
     margin-left: auto;
     margin-right: auto;
-    h1{
-        color: $texto-color;
-        margin: 100px 0 0 0;
-        text-align: center;
+    div{
+        .contacto-titulo{
+            h1{
+                color: $texto-color;
+                margin: 100px 0 0 0;
+                text-align: center;
+            }
+        }
     }
     .contacto-wrapper{
         background-color: $main-color;
