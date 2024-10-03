@@ -89,31 +89,33 @@
                 margin: 40px 0 20px 0; // Margen aumentado
                 padding: 30px 0; // Padding aumentado
             }
-    
             .proyecto-card {
-                grid-template-columns: repeat(3, 1fr); // Ajustar a 3 columnas en tablet
-                margin: 0 20px; // Margen reducido en los lados
-    
-                .card-proyecto2 {
-                    margin: 30px; // Margen reducido en las tarjetas
-    
-                    img {
-                        height: 250px; // Aumentar tamaño de imagen para tablet
-                    }
-    
-                    .card-title {
-                        font-size: 24px; // Aumentar tamaño de fuente para título
-                    }
-    
-                    .card-text {
-                        font-size: 16px; // Aumentar tamaño de fuente para texto
-                    }
-    
-                    a {
-                        ion-icon {
-                            width: 70px; // Ancho aumentado para icono
-                            height: 50px; // Alto aumentado para icono
-                            font-size: 50px; // Tamaño de icono aumentado
+                section{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr); // Ajustar a 3 columnas en tablet
+                    grid-template-rows: repeat(2, auto);
+                    margin: 0 20px; // Margen reducido en los lados
+                    .card-proyecto2 {
+                        margin: 30px; // Margen reducido en las tarjetas
+        
+                        img {
+                            height: 250px; // Aumentar tamaño de imagen para tablet
+                        }
+        
+                        .card-title {
+                            font-size: 24px; // Aumentar tamaño de fuente para título
+                        }
+        
+                        .card-text {
+                            font-size: 16px; // Aumentar tamaño de fuente para texto
+                        }
+        
+                        a {
+                            ion-icon {
+                                width: 70px; // Ancho aumentado para icono
+                                height: 50px; // Alto aumentado para icono
+                                font-size: 50px; // Tamaño de icono aumentado
+                            }
                         }
                     }
                 }

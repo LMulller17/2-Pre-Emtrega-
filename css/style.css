@@ -518,23 +518,25 @@ main .sobremi button:hover {
     margin: 40px 0 20px 0;
     padding: 30px 0;
   }
-  .proyecto-contenedor .proyecto-card {
-    grid-template-columns: repeat(3, 1fr);
+  .proyecto-contenedor .proyecto-card section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     margin: 0 20px;
   }
-  .proyecto-contenedor .proyecto-card .card-proyecto2 {
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 {
     margin: 30px;
   }
-  .proyecto-contenedor .proyecto-card .card-proyecto2 img {
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 img {
     height: 250px;
   }
-  .proyecto-contenedor .proyecto-card .card-proyecto2 .card-title {
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 .card-title {
     font-size: 24px;
   }
-  .proyecto-contenedor .proyecto-card .card-proyecto2 .card-text {
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 .card-text {
     font-size: 16px;
   }
-  .proyecto-contenedor .proyecto-card .card-proyecto2 a ion-icon {
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 a ion-icon {
     width: 70px;
     height: 50px;
     font-size: 50px;
@@ -698,79 +700,76 @@ main .sobremi button:hover {
   .sobremi .contenedor-section .fila .col .contenedor-intereses .interes {
     margin: 30px;
   }
-}
-.proyecto-contenedor div div h2 {
-  text-align: center;
-}
-.proyecto-contenedor div .proyecto-card {
-  margin: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, auto);
-}
-.proyecto-contenedor div .proyecto-card .card-proyecto2 {
-  width: 300px; /* Ancho deseado */
-  height: 800px; /* Alto deseado */
-  padding: 20px; /* Espacio interior */
-  text-align: center;
-}
-.proyecto-contenedor div .proyecto-card .card-proyecto2 img {
-  height: 200px;
-  width: 240px;
-  margin: 10px 3px;
-  align-items: center;
-  border-radius: 10px;
-}
-.proyecto-contenedor div .proyecto-card .card-proyecto2 .card-body .card-title {
-  font-size: 30px;
-}
-.proyecto-contenedor div .proyecto-card .card-proyecto2 .card-body .card-text {
-  font-size: 20px;
-}
-.proyecto-contenedor div .proyecto-card .card-proyecto2 .card-body ion-icon {
-  width: 60px;
-  height: 60px;
-  margin: 25px 25px 0 15px;
-}
-
-.skill-contenedor {
-  margin: auto;
-}
-.skill-contenedor div .skill-secundaria {
-  margin: 50px 350px 0 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
-}
-.skill-contenedor div .skill-secundaria .skill-card article p {
-  font-size: 25px;
-}
-
-main .educacion-contenedor h2 {
-  margin: 0 0 0 550px;
-}
-main .educacion-contenedor .educacion-card-contenedor .row {
-  margin: 30px;
-}
-main .educacion-contenedor .educacion-card-contenedor .row .educacion-card {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-}
-
-.contenedor-contacto div .contacto-titulo h1 {
-  margin: 100px 0 0 0;
-}
-.contenedor-contacto .contacto-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-footer {
-  margin: 50px 0 0 0;
-}
-footer .pieDePagina {
-  font-size: 16px;
+  .proyecto-contenedor div h2 {
+    text-align: center;
+  }
+  .proyecto-contenedor .proyecto-card {
+    margin: 50px;
+  }
+  .proyecto-contenedor .proyecto-card section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 {
+    width: 300px; /* Ancho deseado */
+    height: 800px; /* Alto deseado */
+    padding: 20px; /* Espacio interior */
+    text-align: center;
+  }
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 img {
+    height: 200px;
+    width: 240px;
+    margin: 10px 3px;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 .card-body .card-title {
+    font-size: 30px;
+  }
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 .card-body .card-text {
+    font-size: 20px;
+  }
+  .proyecto-contenedor .proyecto-card section .card-proyecto2 .card-body ion-icon {
+    width: 60px;
+    height: 60px;
+    margin: 25px 25px 0 15px;
+  }
+  .skill-contenedor {
+    margin: auto;
+  }
+  .skill-contenedor .skill-secundaria {
+    margin: 50px 350px 0 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  .skill-contenedor .skill-secundaria .skill-card article p {
+    font-size: 25px;
+  }
+  main .educacion-contenedor h2 {
+    margin: 0 0 0 550px;
+  }
+  main .educacion-contenedor .educacion-card-contenedor .row {
+    margin: 30px;
+  }
+  main .educacion-contenedor .educacion-card-contenedor .row .educacion-card {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .contenedor-contacto div .contacto-titulo h1 {
+    margin: 100px 0 0 0;
+  }
+  .contenedor-contacto .contacto-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    margin: 50px 0 0 0;
+  }
+  footer .pieDePagina {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

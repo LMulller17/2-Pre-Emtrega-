@@ -84,54 +84,52 @@ main{
         }
     }
 }
-}
-
 //Estilos de main - proyectos personales
 .proyecto-contenedor{
-    div{
         div{
             h2{
                 text-align: center;
             }
-        }
+            }
         .proyecto-card{
             margin: 50px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(1, auto);
-            .card-proyecto2{
-                width: 300px; /* Ancho deseado */
-                height: 800px; /* Alto deseado */
-                padding: 20px; /* Espacio interior */
-                text-align: center;
-                img{
-                    height: 200px;
-                    width: 240px;
-                    margin: 10px 3px;
-                    align-items: center;
-                    border-radius: 10px;
-                }
-                .card-body{
-                    .card-title{
-                        font-size: 30px;
+            section{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                .card-proyecto2{
+                    width: 300px; /* Ancho deseado */
+                    height: 800px; /* Alto deseado */
+                    padding: 20px; /* Espacio interior */
+                    text-align: center;
+                    img{
+                        height: 200px;
+                        width: 240px;
+                        margin: 10px 3px;
+                        align-items: center;
+                        border-radius: 10px;
                     }
-                    .card-text{
-                        font-size: 20px;
-                    }
-                    ion-icon{
-                        width: 60px;
-                        height: 60px;
-                        margin: 25px 25px 0 15px;
+                    .card-body{
+                        .card-title{
+                            font-size: 30px;
+                        }
+                        .card-text{
+                            font-size: 20px;
+                        }
+                        ion-icon{
+                            width: 60px;
+                            height: 60px;
+                            margin: 25px 25px 0 15px;
+                        }
                     }
                 }
             }
+            
         }
     }
-}
+
 //Estilos de main - tecnologia
 .skill-contenedor{
     margin: auto;
-    div{
         .skill-secundaria{
             margin: 50px 350px 0 50px;
             display: grid;
@@ -145,7 +143,6 @@ main{
                 }
             }
         }
-    }
 }
 //Estilos de main - educacion
 main{
@@ -186,3 +183,5 @@ footer{
         font-size: 16px;
     }
 }
+}
+
