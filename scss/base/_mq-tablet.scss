@@ -1,17 +1,16 @@
-//Import de Variables
+// Import de Variables
 @import "../utilidades/variables";
-//Import de Mixin
+// Import de Mixin
 @import "../utilidades/mixin";
 
-//Estilos de Tablet
-
-@media screen and (min-width:600px){
-    //estilos de Nav
-    header{
-        nav{
-            div{
-                button{
-                    font-size: xx-large;
+// Estilos de Tablet
+@media (min-width: 600px) {
+    // Estilos de Nav
+    header {
+        nav {
+            div {
+                button {
+                    font-size: 1.5rem; // Cambiado a rem para mejor escalabilidad
                     background-color: $main-color;
                     color: $texto-color;
                 }
@@ -20,161 +19,221 @@
     }
 
     // Estilos de main - index
-    .index-main{
-        .contenedor-banner{
-            margin: 150px 200px 20px;
-            padding: 30px;
-            width: 50%;
-            height: 700px;
-            div{
-                img{
-                    margin-top: 40px;
-                    border: 10px solid $color-principal;
+    .index-main {
+        .contenedor-banner {
+            margin: 100px 150px 20px; // Ajustado
+            padding: 20px; // Ajustado
+            width: 80%; // Ajustado
+            height: auto; // Cambiado a auto
+            div {
+                img {
+                    margin-top: 20px; // Ajustado
+                    border: 5px solid $color-principal; // Ajustado
                     display: block;
-                    width: 70%;
-                    height: 90%;
+                    width: 60%; // Ajustado
+                    height: auto; // Cambiado a auto
                     margin: auto;
-                    border-radius: 100%;
+                    border-radius: 50%; // Cambiado a 50% para un círculo perfecto
                 }
             }
-            h1{
+            h1 {
                 color: $texto-color;
                 margin-top: 15px;
-                font-size: 45px;
-                text-shadow: 2px 2px 4px #000;
+                font-size: 2.5rem; // Cambiado a rem
+                text-shadow: 1px 1px 2px #000; // Ajustado
             }
-            h2{
-                font-size: 30px;
-                margin: 25px;
+            h2 {
+                font-size: 1.8rem; // Cambiado a rem
+                margin: 20px; // Ajustado
                 color: $texto-color;
-                text-shadow: 2px 2px 4px #000; 
+                text-shadow: 1px 1px 2px #000; // Ajustado
             }
-            .redes{
-                a{
+            .redes {
+                a {
                     color: whitesmoke;
                     text-decoration: none;
-                    width: 50px;
-                    height: 50px; 
+                    width: 40px; // Ajustado
+                    height: 40px; // Ajustado
                 }
             }
         }
     }
-    .sobremi{
-        .contenedor-section{
-            div{
-                p{
-                    font-size: 25px;
+    
+    .sobremi {
+        .contenedor-section {
+            div {
+                p {
+                    font-size: 1.5rem; // Cambiado a rem
                     text-align: center;     
                 }
             }
-            .fila{
-                .col{
-                    margin: 40px;
-                    font-size: 25px;
-                    .contenedor-intereses{
+            .fila {
+                .col {
+                    margin: 20px; // Ajustado
+                    font-size: 1.5rem; // Cambiado a rem
+                    .contenedor-intereses {
                         display: grid;
-                        grid-template-columns: repeat(3, 1fr);
-                        grid-template-rows: repeat(3, auto);
+                        grid-template-columns: repeat(2, 1fr); // Cambiado a 2 columnas
+                        grid-template-rows: repeat(2, auto);
                     }
                 }
             }
         }
     }
-    //Estilo de main- proyectos personales 
-    .proyecto-contenedor{
-        .proyecto-card{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, auto);
-            .card-proyecto2{
-                text-align: center;   
-                img{
-                    height: 290px;
-                    width: 280px;
-                    margin: 10px 3px;
-                    border-radius: 10px;
-                }
-                .card-body{
-                    .card-title{
-                        font-size: 35px;
+
+    // Estilo de main - proyectos personales 
+    @media (min-width: 600px) {
+        .proyecto-contenedor {
+            h2 {
+                font-size: 36px; // Tamaño de fuente aumentado para tablet
+                margin: 40px 0 20px 0; // Margen aumentado
+                padding: 30px 0; // Padding aumentado
+            }
+    
+            .proyecto-card {
+                grid-template-columns: repeat(3, 1fr); // Ajustar a 3 columnas en tablet
+                margin: 0 20px; // Margen reducido en los lados
+    
+                .card-proyecto2 {
+                    margin: 30px; // Margen reducido en las tarjetas
+    
+                    img {
+                        height: 250px; // Aumentar tamaño de imagen para tablet
                     }
-                    .card-text{
-                        font-size: 25px;
+    
+                    .card-title {
+                        font-size: 24px; // Aumentar tamaño de fuente para título
                     }
-                    a{
-                        ion-icon{
-                            color: $color-secundario;
-                            width: 60px;
-                            height: 60px;
+    
+                    .card-text {
+                        font-size: 16px; // Aumentar tamaño de fuente para texto
+                    }
+    
+                    a {
+                        ion-icon {
+                            width: 70px; // Ancho aumentado para icono
+                            height: 50px; // Alto aumentado para icono
+                            font-size: 50px; // Tamaño de icono aumentado
                         }
                     }
-                    }
+                }
             }
         }
     }
-    //Estilos de main - tecnologia
-    .skill-contenedor{
+    
+
+    // Estilos de main - tecnologia
+    .skill-contenedor {
         width: auto;
         height: auto;
-        h2{
-            margin: 130px 50px 0 0;
-            font-size: 45px;
+        h2 {
+            margin: 100px 40px 0 0; // Ajustado
+            font-size: 2.5rem; // Cambiado a rem
         }
-        .skill-secundaria{
-            margin: 10px;
+        .skill-secundaria {
+            margin: auto;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr); // Asegurando 2 columnas
             grid-template-rows: repeat(4, auto);
-            .skill-card{
-                padding: 5px;
-                article{
-                    padding: 0 15px 0 15px;
-                    font-size: 45px;
+            .skill-card {
+                padding: 10px; // Ajustado
+                article {
+                    padding: 0 10px; // Ajustado
+                    font-size: 2rem; // Cambiado a rem
                 }
             }
         }
     }
-    //Estilos de main - educacion
-    .educacion-contenedor{
-        h2{
-            margin: 20px;
-        }
-        .educacion-card-contenedor{
-            .row{
-                .educacion-card{
-                    width: 500px;
-                    height: 550px;
-                    justify-items: center;
-                    border-radius: 8px;
-                    margin: 220px 0 220px 0;
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows: repeat(2, auto);
-                    cursor: pointer;
-                    transition: all 0.3s;
-                    .educacion-card2{
-                        width: 350px;
-                        height: 500px;
-                        img{
-                            width: 250px;
-                            height: 270px;
-                        }
-                    }                   
+
+// Estilos de main - educacion
+.educacion-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centrar horizontalmente
+
+    h2 {
+        color: #BF8D30; // Color como en móvil
+        margin: 20px;
+        font-size: 2rem; // Cambiado a rem
+        text-align: center; // Alineado al centro
+        padding: 30px 0; // Añadido padding como en móvil
+    }
+
+    .educacion-card-contenedor {
+        .row {
+            display: flex; // Cambiado a flex para un mejor alineado
+            flex-wrap: wrap; // Permitir el ajuste en múltiples líneas
+            justify-content: center; // Centrar horizontalmente
+
+            .educacion-card {
+                width: 450px; // Ajustado
+                height: auto; // Cambiado a auto
+                display: flex; // Cambiado a flex
+                flex-direction: column; // Para permitir el apilamiento de contenido
+                align-items: center; // Centrar horizontalmente
+                margin: 100px 20px; // Ajustado margen con espaciado
+
+                .educacion-card2 {
+                    background-color: #99B4BF; // Color de fondo
+                    border-radius: 24px;
+                    min-height: 15rem;
+                    padding: 20px 35px;
+                    align-items: center; // Alinear contenido en el centro
+                    transition: transform 0.3s;
+                    display: flex;
+                    flex-direction: column; // Asegurando que el contenido se apile
+
+                    img {
+                        width: 220px; // Ajustado
+                        height: auto; // Cambiado a auto
+                        border-radius: 5px; // Bordes redondeados como en móvil
+                    }
+
+                    h3 {
+                        color: #BF8D30; // Color de texto
+                        text-shadow: 2px 2px 4px #000;
+                        font-size: 30px;
+                        text-align: center; // Alineado al centro
+                        margin: 10px;
+                    }
+
+                    h4 {
+                        color: #D9B70D;
+                        text-shadow: 2px 2px 4px #000;
+                        font-size: 25px;
+                    }
+
+                    p {
+                        color: #D9B70D;
+                        margin-top: 0.5rem;
+                        font-size: 30px;
+                        text-align: end; // Alineado al final
+                        text-shadow: 2px 2px 4px #000;
+                    }
                 }
             }
-        }
-    }
-    //Estilos de main -contacto
-    .contenedeor-contacto{
-        h1{
-            margin: 40px 0 25px 0;
-        }
-    }
-    // estilos de footer
-    footer{
-        margin: 540px 0 0 0;
-        .pieDePagina{
-            font-size: 25px;
         }
     }
 }
+
+
+
+
+
+    // Estilos de main - contacto
+    .contenedeor-contacto {
+        h1 {
+            margin: 40px 0 25px 0;
+            font-size: 2rem; // Cambiado a rem
+        }
+    }
+
+    // Estilos de footer
+    footer {
+        margin: 100px 0 0 0; // Ajustado
+        .pieDePagina {
+            font-size: 1.5rem; // Cambiado a rem
+        }
+    }
+}
+

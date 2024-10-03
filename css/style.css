@@ -55,7 +55,7 @@ footer .pieDePagina {
   text-align: center;
   color: #BF8D30;
 }
-footer .pieDePaginahover {
+footer .pieDePagina:hover {
   color: whitesmoke;
   box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
 }
@@ -158,7 +158,7 @@ main .sobremi .contenedor-section h2 {
   padding: 20px 0;
 }
 main .sobremi .contenedor-section p {
-  color: v #D9B70D;
+  color: #D9B70D;
   font-size: 20px;
   line-height: 22px;
   margin-bottom: 30px;
@@ -307,45 +307,57 @@ main .sobremi button:hover {
 }
 .educacion-contenedor h2 {
   color: #BF8D30;
-  font-size: 40px;
-  margin: 30px 0 0 0;
-  padding: 30px 0;
+  font-size: 2.5rem;
+  margin: 2rem 0 0 0;
+  padding: 2rem 0;
   text-align: center;
+}
+.educacion-contenedor .educacion-card-contenedor .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .educacion-contenedor .educacion-card-contenedor .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 {
   background-color: #99B4BF;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   min-height: 15rem;
-  margin: 20px;
-  padding: 20px 35px;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
   align-content: center;
   transition: transform 0.3s;
 }
 .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 img {
   display: flex;
   justify-items: center;
-  height: 250px;
-  width: 265px;
-  border-radius: 5px;
+  height: 15rem;
+  width: 16.5rem;
+  border-radius: 0.5rem;
 }
 .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 h3 {
   color: #BF8D30;
-  text-shadow: 2px 2px 4px #000;
-  font-size: 30px;
+  text-shadow: 0.125rem 0.125rem 0.25rem #000;
+  font-size: 1.875rem;
   text-align: center;
-  margin: 10px;
+  margin: 0.625rem;
 }
 .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 h4 {
   color: #D9B70D;
-  text-shadow: 2px 2px 4px #000;
-  font-size: 25px;
+  text-shadow: 0.125rem 0.125rem 0.25rem #000;
+  font-size: 1.5625rem;
 }
 .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 p {
   color: #D9B70D;
   margin-top: 0.5rem;
-  font-size: 30px;
+  font-size: 1.875rem;
   text-align: end;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 0.125rem 0.125rem 0.25rem #000;
 }
 
 .proyecto-contenedor {
@@ -354,57 +366,56 @@ main .sobremi button:hover {
 }
 .proyecto-contenedor h2 {
   color: #BF8D30;
-  font-size: 40px;
-  margin: 60px 0 20px 0;
-  padding: 30px 0;
+  font-size: 30px;
+  margin: 30px 0 10px 0;
+  padding: 20px 0;
   text-align: center;
 }
 .proyecto-contenedor .proyecto-card {
-  border-radius: 24px;
-  min-height: 15rem;
-  margin: 0 0 0 20px;
-  padding: 20px 35px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   justify-content: center;
-  gap: 50px;
 }
 .proyecto-contenedor .proyecto-card .card-proyecto2 {
   background-color: #99B4BF;
   color: #BF8D30;
+  border-radius: 24px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  min-height: 15rem;
+  margin: 70px;
 }
 .proyecto-contenedor .proyecto-card .card-proyecto2:hover {
   background-color: #BF8D30;
   color: #99B4BF;
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.3s;
 }
 .proyecto-contenedor .proyecto-card .card-proyecto2 img {
-  height: 250px;
-  width: 240px;
-  margin: 10px 3px;
+  height: 200px;
+  width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 .proyecto-contenedor .proyecto-card .card-proyecto2 .card-title {
   color: #BF8D30;
   text-shadow: 2px 2px 4px #000;
-  font-size: 25px;
+  font-size: 20px;
 }
 .proyecto-contenedor .proyecto-card .card-proyecto2 .card-text {
-  color: v #D9B70D;
+  color: #D9B70D;
   text-shadow: 2px 2px 4px #000;
-  font-size: 15px;
+  font-size: 14px;
 }
 .proyecto-contenedor .proyecto-card .card-proyecto2 a ion-icon {
   color: #BF8D30;
   text-shadow: 2px 2px 4px #000;
   list-style: none;
-  width: 80px;
-  height: 45px;
-  margin: 20px 30px;
-  font-size: 70px;
+  width: 60px;
+  height: 40px;
+  margin: 10px;
+  font-size: 40px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -448,138 +459,180 @@ main .sobremi button:hover {
   font-weight: 700;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   header nav div button {
-    font-size: xx-large;
+    font-size: 1.5rem;
     background-color: #99B4BF;
     color: #BF8D30;
   }
   .index-main .contenedor-banner {
-    margin: 150px 200px 20px;
-    padding: 30px;
-    width: 50%;
-    height: 700px;
+    margin: 100px 150px 20px;
+    padding: 20px;
+    width: 80%;
+    height: auto;
   }
   .index-main .contenedor-banner div img {
-    margin-top: 40px;
-    border: 10px solid #2D4B73;
+    margin-top: 20px;
+    border: 5px solid #2D4B73;
     display: block;
-    width: 70%;
-    height: 90%;
+    width: 60%;
+    height: auto;
     margin: auto;
-    border-radius: 100%;
+    border-radius: 50%;
   }
   .index-main .contenedor-banner h1 {
     color: #BF8D30;
     margin-top: 15px;
-    font-size: 45px;
-    text-shadow: 2px 2px 4px #000;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px #000;
   }
   .index-main .contenedor-banner h2 {
-    font-size: 30px;
-    margin: 25px;
+    font-size: 1.8rem;
+    margin: 20px;
     color: #BF8D30;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 1px 1px 2px #000;
   }
   .index-main .contenedor-banner .redes a {
     color: whitesmoke;
     text-decoration: none;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   .sobremi .contenedor-section div p {
-    font-size: 25px;
+    font-size: 1.5rem;
     text-align: center;
   }
   .sobremi .contenedor-section .fila .col {
-    margin: 40px;
-    font-size: 25px;
+    margin: 20px;
+    font-size: 1.5rem;
   }
   .sobremi .contenedor-section .fila .col .contenedor-intereses {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-  .proyecto-contenedor .proyecto-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
   }
+}
+@media (min-width: 600px) and (min-width: 600px) {
+  .proyecto-contenedor h2 {
+    font-size: 36px;
+    margin: 40px 0 20px 0;
+    padding: 30px 0;
+  }
+  .proyecto-contenedor .proyecto-card {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 20px;
+  }
   .proyecto-contenedor .proyecto-card .card-proyecto2 {
-    text-align: center;
+    margin: 30px;
   }
   .proyecto-contenedor .proyecto-card .card-proyecto2 img {
-    height: 290px;
-    width: 280px;
-    margin: 10px 3px;
-    border-radius: 10px;
+    height: 250px;
   }
-  .proyecto-contenedor .proyecto-card .card-proyecto2 .card-body .card-title {
-    font-size: 35px;
+  .proyecto-contenedor .proyecto-card .card-proyecto2 .card-title {
+    font-size: 24px;
   }
-  .proyecto-contenedor .proyecto-card .card-proyecto2 .card-body .card-text {
-    font-size: 25px;
+  .proyecto-contenedor .proyecto-card .card-proyecto2 .card-text {
+    font-size: 16px;
   }
-  .proyecto-contenedor .proyecto-card .card-proyecto2 .card-body a ion-icon {
-    color: #253C59;
-    width: 60px;
-    height: 60px;
+  .proyecto-contenedor .proyecto-card .card-proyecto2 a ion-icon {
+    width: 70px;
+    height: 50px;
+    font-size: 50px;
   }
+}
+@media (min-width: 600px) {
   .skill-contenedor {
     width: auto;
     height: auto;
   }
   .skill-contenedor h2 {
-    margin: 130px 50px 0 0;
-    font-size: 45px;
+    margin: 100px 40px 0 0;
+    font-size: 2.5rem;
   }
   .skill-contenedor .skill-secundaria {
-    margin: 10px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
   }
   .skill-contenedor .skill-secundaria .skill-card {
-    padding: 5px;
+    padding: 10px;
   }
   .skill-contenedor .skill-secundaria .skill-card article {
-    padding: 0 15px 0 15px;
-    font-size: 45px;
+    padding: 0 10px;
+    font-size: 2rem;
+  }
+  .educacion-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .educacion-contenedor h2 {
+    color: #BF8D30;
     margin: 20px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .educacion-contenedor .educacion-card-contenedor .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .educacion-contenedor .educacion-card-contenedor .row .educacion-card {
-    width: 500px;
-    height: 550px;
-    justify-items: center;
-    border-radius: 8px;
-    margin: 220px 0 220px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    cursor: pointer;
-    transition: all 0.3s;
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 20px;
   }
   .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 {
-    width: 350px;
-    height: 500px;
+    background-color: #99B4BF;
+    border-radius: 24px;
+    min-height: 15rem;
+    padding: 20px 35px;
+    align-items: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
   }
   .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 img {
-    width: 250px;
-    height: 270px;
+    width: 220px;
+    height: auto;
+    border-radius: 5px;
+  }
+  .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 h3 {
+    color: #BF8D30;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+  }
+  .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 h4 {
+    color: #D9B70D;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 25px;
+  }
+  .educacion-contenedor .educacion-card-contenedor .row .educacion-card .educacion-card2 p {
+    color: #D9B70D;
+    margin-top: 0.5rem;
+    font-size: 30px;
+    text-align: end;
+    text-shadow: 2px 2px 4px #000;
   }
   .contenedeor-contacto h1 {
     margin: 40px 0 25px 0;
+    font-size: 2rem;
   }
   footer {
-    margin: 540px 0 0 0;
+    margin: 100px 0 0 0;
   }
   footer .pieDePagina {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 1280px) {
   main {
     margin: 40px;
     display: grid;

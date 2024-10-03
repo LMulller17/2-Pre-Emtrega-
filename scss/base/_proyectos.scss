@@ -1,68 +1,76 @@
-//Import de Variables
+// Import de Variables
 @import "../utilidades/variables";
-//Import de Mixin
+// Import de Mixin
 @import "../utilidades/mixin";
 
-//Estilos de Proyectos Personales
-
-.proyecto-contenedor{
+// Estilos de Proyectos Personales
+.proyecto-contenedor {
     width: auto;
     height: auto;
-    h2{
+
+    h2 {
         color: $texto-color;
-        font-size: 40px;
-        margin: 60px 0 20px 0;
-        padding: 30px 0;
+        font-size: 30px; // Tamaño reducido para móvil
+        margin: 30px 0 10px 0; // Margen reducido
+        padding: 20px 0; // Padding reducido
         text-align: center;
     }
+
     .proyecto-card {
-        border-radius: 24px;
-        min-height: 15rem;
-        margin: 0 0 0 20px;
-        padding: 20px 35px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 50px;  
-        .card-proyecto2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); // Permitir que los elementos se ajusten
+        grid-template-rows: repeat(2, auto);
+        justify-content: center; // Centrar en dispositivos móviles
+        // gap: 20px; // Espacio entre las tarjetas
+
+        .card-proyecto2 {
             background-color: $main-color;
             color: $texto-color;
+            border-radius: 24px;
             cursor: pointer;
             transition: all 0.3s ease-in-out;
-            &:hover{
+            min-height: 15rem; // Mantener la altura mínima
+            margin: 70px;
+
+            &:hover {
                 background-color: $texto-color;
                 color: $main-color;
-                transform: scale(1.1);
+                transform: scale(1.05); // Escala más sutil
                 transition: all 0.3s;
             }
-            img{
-                height: 250px;
-                width: 240px;
-                margin: 10px 3px;
-                border-radius: 10px;
+
+            img {
+                height: 200px; // Tamaño de imagen más pequeño para móvil
+                width: 100%; // Ancho completo
+                border-radius: 10px; // Mantener el borde redondeado
+                object-fit: cover; // Para mantener la relación de aspecto
             }
-            .card-title{
+
+            .card-title {
                 color: $texto-color;
                 text-shadow: 2px 2px 4px #000;
-                font-size: 25px;
+                font-size: 20px; // Tamaño de fuente reducido
             }
-            .card-text{
-                color: v$texto-color-secundario;
+
+            .card-text {
+                color: $texto-color-secundario;
                 text-shadow: 2px 2px 4px #000;
-                font-size: 15px;
+                font-size: 14px; // Tamaño de fuente reducido
             }
-            a{
-                ion-icon{
+
+            a {
+                ion-icon {
                     color: $texto-color;
                     text-shadow: 2px 2px 4px #000;
                     list-style: none;
-                    width: 80px;
-                    height: 45px;
-                    margin: 20px 30px;
-                    font-size: 70px;
+                    width: 60px; // Ancho reducido
+                    height: 40px; // Alto reducido
+                    margin: 10px; // Margen reducido
+                    font-size: 40px; // Tamaño de icono reducido
                     cursor: pointer;
                     transition: all 0.3s ease-in-out;
-                    &:hover{
+
+                    &:hover {
                         background-color: $texto-color;
                         color: $color-secundario;
                         transform: scale(1.1);

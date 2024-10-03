@@ -1,55 +1,71 @@
-//Import de Variables
+// Import de Variables
 @import "../utilidades/variables";
-//Import de Mixin
+// Import de Mixin
 @import "../utilidades/mixin";
 
-//Estilos de Educacion
+// Estilos de Educación
 
-.educacion-contenedor{
+.educacion-contenedor {
     @include flexEducacion;
-    h2{
+
+    h2 {
         color: $texto-color;
-        font-size: 40px;
-        margin: 30px 0 0 0;
-        padding: 30px 0;
+        font-size: 2.5rem; // Cambiado de 40px a rem
+        margin: 2rem 0 0 0; // Cambiado de 30px a rem
+        padding: 2rem 0; // Cambiado de 30px a rem
         text-align: center;
     }
-    .educacion-card-contenedor{
-        .row{
-            .educacion-card{
-                .educacion-card2{
+
+    .educacion-card-contenedor {
+        .row {
+            display: flex; // Para alinear las tarjetas en fila
+            flex-direction: column; // Por defecto en columnas (mobile-first)
+            align-items: center; // Centra las tarjetas en la columna
+
+            @media (min-width: 768px) { // A partir de un ancho de 768px
+                flex-direction: row; // Cambia a filas en pantallas más grandes
+                flex-wrap: wrap; // Permite que las tarjetas se ajusten
+                justify-content: center; // Centra el contenido
+            }
+
+            .educacion-card {
+                .educacion-card2 {
                     background-color: $main-color;
-                    border-radius: 24px;
-                    min-height: 15rem;
-                    margin: 20px;
-                    padding: 20px 35px ;
+                    border-radius: 1.5rem; // Cambiado de 24px a rem
+                    min-height: 15rem; // Mantenido
+                    margin: 1rem; // Cambiado de 20px a rem
+                    padding: 1.5rem 2rem; // Cambiado de 20px y 35px a rem
                     align-content: center;
                     transition: transform 0.3s;
-                    img{
+
+                    img {
                         display: flex;
                         justify-items: center;
-                        height: 250px;
-                        width: 265px;
-                        border-radius: 5px;
+                        height: 15rem; // Cambiado de 250px a rem
+                        width: 16.5rem; // Cambiado de 265px a rem
+                        border-radius: 0.5rem; // Cambiado de 5px a rem
                     }
-                    h3{
+
+                    h3 {
                         color: $texto-color;
-                        text-shadow: 2px 2px 4px #000;
-                        font-size: 30px;
+                        text-shadow: 0.125rem 0.125rem 0.25rem #000; // Cambiado a rem
+                        font-size: 1.875rem; // Cambiado de 30px a rem
                         text-align: center;
-                        margin: 10px;
+                        margin: 0.625rem; // Cambiado de 10px a rem
                     }
-                    h4{
+
+                    h4 {
                         color: $texto-color-secundario;
-                        text-shadow: 2px 2px 4px #000;
-                        font-size: 25px;
+                        text-shadow: 0.125rem 0.125rem 0.25rem #000; // Cambiado a rem
+                        font-size: 1.5625rem; // Cambiado de 25px a rem
                     }
-                    p{
+
+                    p {
                         color: $texto-color-secundario;
-                        margin-top: 0.5rem;
-                        font-size: 30px;
+                        margin-top: 0.5rem; // Mantenido
+                        font-size: 1.875rem; // Cambiado de 30px a rem
                         text-align: end;
-                        text-shadow: 2px 2px 4px #000;
+                        text-shadow: 0.125rem 0.125rem 0.25rem #000; // Cambiado a rem
                     }
                 }
             }
