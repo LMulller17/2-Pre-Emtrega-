@@ -8,6 +8,9 @@ header{
     .contenedor-header{
         background-color: $color-principal;
         color: $texto-color;
+        display: flex;
+        justify-content: space-between; // Distribuye el contenido con espacio entre ellos
+        align-items: center; // Centra verticalmente el contenido
         .logo{
             img{
                 width: 360px;

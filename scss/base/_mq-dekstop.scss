@@ -6,7 +6,27 @@
 //Estilos de Desktop
 @media (min-width:1280px){
     //Estilos de Nav
-
+    header{
+        .contenedor-header {
+            display: flex;
+            justify-content: space-between; // Distribuye el contenido con espacio entre ellos
+            align-items: center; // Centra verticalmente el contenido
+            .logo {
+                display: flex;
+                align-items: center; // Centra la imagen del logo con el menú
+                img {
+                margin-right: 20px; // Ajusta el margen del logo si es necesario
+                }
+            }
+            .barra-nav {
+                display: flex;
+                justify-content: flex-end; // Empuja el menú hacia la derecha en pantallas grandes
+                .navbar-nav {
+                display: flex;
+                }
+            }
+        }
+    }
 
     //Estilos de main - index
 main{
@@ -85,47 +105,61 @@ main{
     }
 }
 //Estilos de main - proyectos personales
-.proyecto-contenedor{
-        div{
-            h2{
+.proyecto-contenedor {
+    width: 100%; /* Asegúrate de que ocupe el ancho disponible */
+    max-width: 1200px; /* Limitar el ancho máximo para evitar que se extienda demasiado */
+    margin: 0 auto; /* Centrado horizontal */
+    div {
+        h2 {
+            text-align: center;
+        }
+    }
+    .proyecto-card {
+        margin: 50px;
+        display: flex; /* Cambio para usar flexbox */
+        justify-content: center; /* Para centrar las tarjetas horizontalmente */        
+        section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; /* Espacio entre las columnas */
+            .card-proyecto2 {
+                width: 300px; /* Ancho deseado */
+                height: 800px; /* Alto deseado */
+                padding: 20px; /* Espacio interior */
                 text-align: center;
-            }
-            }
-        .proyecto-card{
-            margin: 50px;
-            section{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                .card-proyecto2{
-                    width: 300px; /* Ancho deseado */
-                    height: 800px; /* Alto deseado */
-                    padding: 20px; /* Espacio interior */
-                    text-align: center;
-                    img{
-                        height: 200px;
-                        width: 240px;
-                        margin: 10px 3px;
-                        align-items: center;
-                        border-radius: 10px;
+                display: flex;
+                flex-direction: column; /* Coloca el contenido verticalmente */
+                justify-content: space-between; /* Distribuye el espacio entre los elementos de la tarjeta */
+                align-items: center; /* Centra el contenido verticalmente */
+                img {
+                    height: 200px;
+                    width: 240px;
+                    margin: 10px 3px;
+                    align-items: center;
+                    border-radius: 10px;
+                }
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center; /* Centra verticalmente dentro del body */
+                    align-items: center; /* Centra horizontalmente */
+                    
+                    .card-title {
+                        font-size: 30px;
                     }
-                    .card-body{
-                        .card-title{
-                            font-size: 30px;
-                        }
-                        .card-text{
-                            font-size: 20px;
-                        }
-                        ion-icon{
-                            width: 60px;
-                            height: 60px;
-                            margin: 25px 25px 0 15px;
-                        }
+                    .card-text {
+                        font-size: 20px;
+                    }
+                    ion-icon {
+                        width: 60px;
+                        height: 60px;
+                        margin: 25px 25px 0 15px;
                     }
                 }
             }
-            
         }
     }
+}
 
 //Estilos de main - tecnologia
 .skill-contenedor{
